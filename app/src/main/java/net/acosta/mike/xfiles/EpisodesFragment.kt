@@ -37,7 +37,7 @@ class EpisodesFragment : Fragment()  {
                     result ->
                         this@EpisodesFragment.activity.runOnUiThread {
                             recyclerView.adapter =
-                                DataAdapter(
+                                DataAdapter(this.activity,
                                         result.items
                                                 .filter{ it.season == season }
                                                 .sortedWith(compareBy({ it.season }, { it.episode }))
