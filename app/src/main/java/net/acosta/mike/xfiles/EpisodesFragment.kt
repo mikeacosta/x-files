@@ -28,7 +28,7 @@ class EpisodesFragment : Fragment()  {
         val view : View  = binding.root
         val recyclerView : RecyclerView = view.findViewById(R.id.recycler_view)
 
-        recyclerView.layoutManager = LinearLayoutManager(this.activity)
+        recyclerView.layoutManager = LinearLayoutManager(this@EpisodesFragment.activity)
 
         val api = RestClient()
         api.getEpisodes().observeOn(AndroidSchedulers.mainThread())
