@@ -23,7 +23,7 @@ class EpisodesFragment : Fragment()  {
         season = arguments.get("season") as Int
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val binding = DataBindingUtil.inflate<EpisodesFragmentBinding>(inflater, R.layout.episodes_fragment, container, false)
         val view : View  = binding.root
         val recyclerView : RecyclerView = view.findViewById(R.id.recycler_view)

@@ -53,9 +53,9 @@ class DataAdapter(private val context: Context, private val dataList : List<Epis
         val imageView = view.findViewById<ImageView>(R.id.item_image)
 
         fun bind(context: Context, episode: Episode, position: Int) {
-            cardView?.setOnClickListener({v ->
+            cardView?.setOnClickListener {
                 context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(episode.url)))
-            })
+            }
 
             when {
                 position % 4 == 0 -> imageView.setImageDrawable(ContextCompat.getDrawable(context, R.drawable.xfilesavatar))
