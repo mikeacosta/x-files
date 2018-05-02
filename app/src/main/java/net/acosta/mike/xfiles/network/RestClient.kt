@@ -1,6 +1,6 @@
 package net.acosta.mike.xfiles.network
 
-import io.reactivex.Observable
+import io.reactivex.Single
 import net.acosta.mike.xfiles.data.Episodes
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
@@ -9,7 +9,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RestClient {
 
-    val api: XfilesApi
+    private val api: XfilesApi
 
     init {
         val retrofit = Retrofit.Builder()
@@ -21,7 +21,7 @@ class RestClient {
         api = retrofit.create(XfilesApi::class.java)
     }
 
-    fun getEpisodes() : Observable<Episodes> {
+    fun getEpisodes() : Single<Episodes> {
         return api.getData()
     }
 }

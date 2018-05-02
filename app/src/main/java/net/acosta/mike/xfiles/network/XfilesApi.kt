@@ -1,6 +1,6 @@
 package net.acosta.mike.xfiles.network
 
-import io.reactivex.Observable
+import io.reactivex.Single
 import net.acosta.mike.xfiles.data.Episodes
 import retrofit2.http.GET
 
@@ -10,5 +10,5 @@ import retrofit2.http.GET
 interface XfilesApi {
 
     @GET("/api/xfiles")
-    fun getData() : Observable<Episodes>
+    fun getData() : Single<Episodes>
 }

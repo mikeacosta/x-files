@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentManager
 import android.support.v4.app.FragmentStatePagerAdapter
-import net.acosta.mike.xfiles.EpisodesFragment
+import net.acosta.mike.xfiles.ui.EpisodesFragment
 
 
 class EpisodesPagerAdapter (fm: FragmentManager) : FragmentStatePagerAdapter(fm) {
