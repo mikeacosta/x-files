@@ -54,4 +54,5 @@ dependencies {
 
     implementation "android.arch.lifecycle:extensions:1.1.1"
 
+    implementation "org.koin:koin-android-architecture:$koin_version"
 }

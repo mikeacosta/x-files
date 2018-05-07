@@ -8,13 +8,16 @@ import io.reactivex.schedulers.Schedulers
 
 class EpisodeRepository(private val client: RestClient) {
 
-    fun getEpisodeList(season: Int): MutableLiveData<List<Episode>> {
-        val episodes = MutableLiveData<List<Episode>>()
+    private val allEpisodes = client.getEpisodes()
 
-        client.getEpisodes().subscribeOn(Schedulers.io())
+    fun getEpisodeList(season: Int): MutableLiveData<List<Episode>> {
+
+        val seasonEpisodes = MutableLiveData<List<Episode>>()
+
+        allEpisodes.subscribeOn(Schedulers.io())
                 .subscribe ({
                     result ->
-                    episodes.postValue(result.items
+                    seasonEpisodes.postValue(result.items
                             .filter{ it.season == season }
                             .sortedWith(compareBy({ it.season }, { it.episode }))
                     )
@@ -22,6 +25,6 @@ class EpisodeRepository(private val client: RestClient) {
                     error.printStackTrace()
                 })
 
-        return episodes
+        return seasonEpisodes
     }
 }
