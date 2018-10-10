@@ -9,7 +9,7 @@
             type="net.acosta.mike.xfiles.data.Episode" />
     </data>
 
-    <android.support.v7.widget.CardView
+    <androidx.cardview.widget.CardView
         android:id="@+id/card_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -43,9 +43,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/item_image"
-                android:layout_toRightOf="@+id/item_image"
                 android:layout_alignParentTop="true"
-                android:textSize="22dp"
+                android:textSize="22sp"
                 android:text="@{episode.episode + `. ` + episode.title}"/>
 
             <TextView
@@ -53,7 +52,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/item_image"
-                android:layout_toRightOf="@+id/item_image"
                 android:layout_below="@+id/item_title"
                 android:text="@{episode.date}" />
 
@@ -62,10 +60,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_toEndOf="@+id/item_image"
-                android:layout_toRightOf="@+id/item_image"
                 android:layout_below="@+id/item_detail" />
 
         </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </layout>

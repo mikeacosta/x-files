@@ -2,7 +2,7 @@ package net.acosta.mike.xfiles.repository
 
 import net.acosta.mike.xfiles.data.Episode
 import net.acosta.mike.xfiles.network.RestClient
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import io.reactivex.schedulers.Schedulers
 
 

@@ -1,11 +1,11 @@
 package net.acosta.mike.xfiles.ui
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
 import net.acosta.mike.xfiles.adapter.EpisodesPagerAdapter
-import android.support.design.widget.TabLayout
-import android.support.v4.content.ContextCompat
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import com.google.android.material.tabs.TabLayout
+import kotlinx.android.synthetic.main.activity_main.*
 import net.acosta.mike.xfiles.R
 
 

@@ -7,4 +7,5 @@
     <color name="colorText">#ffffff</color>
     <color name="card_background">#c6cfd3</color>
     <color name="fragment_background">#e2e7e9</color>
+    <color name="tabNotSelected">#a8a8a8</color>
 </resources>

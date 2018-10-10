@@ -1,12 +1,13 @@
 # x-files
 
+- [Kotlin](https://kotlinlang.org/)
 - [Android Architecture Components](https://developer.android.com/topic/libraries/architecture/)
   - ViewModel
   - LiveData
 - [Data Binding](https://developer.android.com/topic/libraries/data-binding/)
 - [RxJava 2](https://github.com/ReactiveX/RxAndroid)
 - [Retrofit](http://square.github.io/retrofit/)
-- [Koin](https://insert-koin.io/)
+- [Koin](https://insert-koin.io/) dependency injection framework
 
 ```
 val theTruth = { x: Boolean -> isOutThere(x) }
