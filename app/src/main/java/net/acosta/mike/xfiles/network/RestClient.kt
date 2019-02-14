@@ -13,7 +13,7 @@ class RestClient {
 
     init {
         val retrofit = Retrofit.Builder()
-                .baseUrl("http://demo3886988.mockable.io")
+                .baseUrl("https://demo3886988.mockable.io")
                 .addConverterFactory(GsonConverterFactory.create())
                 .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()
